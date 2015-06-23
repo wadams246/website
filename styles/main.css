@@ -1,3 +1,7 @@
+html {
+	overflow: scroll;
+}
+
 body {
 	background-color: #252526;
 	color: #696969;
@@ -5,7 +9,6 @@ body {
 	font-size: 16px;
 	margin: 10px 200px;
 	padding: 0 50px;
-
 }
 
 #main {
@@ -52,12 +55,11 @@ table tr:nth-child(even) {
 	height: 40px;
 	margin: 0 0 6px 0;
 	text-align: center;
-
 }
 
 #navbar ul {
 	display: inline-block;
-	height: 40px;
+	max-height: 40px;
 	margin: 0;
 	padding: 0;
 	text-align: center;
@@ -67,27 +69,24 @@ table tr:nth-child(even) {
 	display: inline-block;
 	float: left;
 	text-align: center;
-
 }
 
 #navbar li a {
-	background: #2D2D30;	
+	background: #2D2D30;
+	border-bottom: 0;	
 	display: inline-block;
 	color: #A9A9AE;
 	float: left;
 	font-family: arial;
 	outline: 1px solid black;
-	margin: 0 1px;
 	padding: 11px 20px;
 	text-decoration: none;
-	transition: .3s;
-
 }
 
 #navbar li a:hover {
-	background: #555;
+	border-bottom: 4px solid #009AFF;
 	color: #C7C7C8;
-	outline: 1px solid #009AFF;
+	padding-bottom: 7px;
 	transition: .3s;
 }
 
@@ -102,7 +101,8 @@ body.index #navbar li a.index,
 body.about #navbar li a.about,
 body.customers #navbar li a.customers,
 body.contact #navbar li a.contact {
-	background: #555;
+	border-bottom: 4px solid #009AFF;
 	color: #C7C7C8;
-	outline: 1px solid #009AFF;
+	padding-bottom: 7px;
+
 }
