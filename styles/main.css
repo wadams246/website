@@ -5,7 +5,7 @@ html {
 body {
 	background-color: #252526;
 	color: #696969;
-	font-family: "Trebuchet MS", Verdana, sans-serif;
+	font-family: "Arial", sans-serif;
 	font-size: 16px;
 	margin: 10px 200px;
 	padding: 0 50px;
@@ -22,8 +22,11 @@ body {
 h1 {
 	border-bottom: 2px solid #009AFF;
 	color: #C7C7C8;
-	font-family: Georgia, serif;
 	font-size: 30px;
+}
+
+h3 {
+	margin-bottom: 5px;
 }
 
 table {
@@ -75,9 +78,8 @@ table tr:nth-child(even) {
 	background: #2D2D30;
 	border-bottom: 0;	
 	display: inline-block;
-	color: #A9A9AE;
+	color: #C7C7C8;
 	float: left;
-	font-family: arial;
 	outline: 1px solid black;
 	padding: 11px 20px;
 	text-decoration: none;
@@ -85,7 +87,6 @@ table tr:nth-child(even) {
 
 #navbar li a:hover {
 	border-bottom: 4px solid #009AFF;
-	color: #C7C7C8;
 	padding-bottom: 7px;
 	transition: .2s;
 }
@@ -98,11 +99,33 @@ table tr:nth-child(even) {
 
 /*changes color of active page link*/
 body.index #navbar li a.index,
-body.about #navbar li a.about,
-body.customers #navbar li a.customers,
+body.javascript #navbar li a.javascript,
+body.sql #navbar li a.sql,
 body.contact #navbar li a.contact {
 	border-bottom: 4px solid #009AFF;
-	color: #C7C7C8;
 	padding-bottom: 7px;
 
+}
+
+/*javascript.html css*/
+#jsbgcolor {
+	font-size: 20px;
+	text-decoration: none;
+	list-style-type: none;
+	display: inline-block;
+
+}
+
+ul.button, ul.button li {
+	display: inline-block;
+	list-style-type: none;
+	margin-top; 5px;
+
+}
+
+button {
+	border: 1px solid grey;
+	border-radius: 6px;
+	padding: 6px;
+	width: 60px;
 }
