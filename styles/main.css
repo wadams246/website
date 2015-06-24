@@ -87,7 +87,7 @@ table tr:nth-child(even) {
 	border-bottom: 4px solid #009AFF;
 	color: #C7C7C8;
 	padding-bottom: 7px;
-	transition: .3s;
+	transition: .2s;
 }
 
 #navbar li a.current {
