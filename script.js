@@ -10,19 +10,11 @@ document.getElementById("nav02").innerHTML =
 	"<li><a href='#' class='contact'>Contact</a></li>"
 	"</div></ul>";
 
-/*document.getElementById("nav01").innerHTML = 
-	"<ul id='menu'>" +
-	"<li><a href='index.html'>Home</a></li>" +
-	"<li><a href='customers.html'>Data</a></li>" +
-	"<li><a href='about.html'>About</a></li>" +
-	"</ul>";*/
 
 // chagnes the backgound color on the javascript.html page
 function changeBackground(c) {
 	document.body.style.background = c;
-	if (c != '#252526'){
-		alert("Background color was chagned to " + c + ".");
-	} else {
+	if (c === '#252526'){
 		alert("Background color has been reset.");
-	}
+	} 
 }
