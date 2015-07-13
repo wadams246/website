@@ -54,42 +54,38 @@ table tr:nth-child(even) {
 /* sidebar css */
 #side-nav {
     background: #2D2D30;
+    border-right: 1px solid black;
     display: block;
     float: left;
-    margin-left: -249px;
-    margin-top: -58px;
-    position: absolute;
-    text-align: left;
-    width: 248px;
     height: 100%;
+    margin-left: -249px;
+    position: fixed;
+    text-align: left;
+    top: 0;
+    width: 245px;
 }
 
     #side-nav ul {
         display: block;
-        padding-top: 59px;
+        margin-top: 59px;
         padding-left: 0
     }
 
-        #side-nav ul li {
+        #side-nav ul li a { 
+            background: #2D2D30;
+            color: grey;
             display: block;
-            margin-top: -16px;
+            font-family: "Arial", sans-serif;
+            padding: 20px 10px;
+            text-decoration: none;
+            transition: .3s;
         }
 
-            #side-nav ul li a { 
-                background: #2D2D30;
-                color: grey;
-                display: block;
-                font-family: "Arial", sans-serif;
-                padding: 20px 10px;
-                text-decoration: none;
-                transition: .3s;
-            }
-        
-            #side-nav ul li a:hover {
-                background: #424242;
-                color: #D8D8D8;
-                transition: .3s;
-            }
+        #side-nav ul li a:hover {
+            background: #424242;
+            color: #D8D8D8;
+            transition: .3s;
+        }
 
 /* top bar css*/
 #navbar {

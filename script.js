@@ -20,9 +20,7 @@ document.getElementById("nav02").innerHTML =
 // chagnes the backgound color on the javascript.html page
 function changeBackground(c) {
 	document.body.style.background = c;
-	if (c != '#252526'){
-		alert("Background color was chagned to " + c + ".");
-	} else {
+	if (c === '#252526'){
 		alert("Background color has been reset.");
-	}
+	} 
 }

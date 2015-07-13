@@ -5,13 +5,16 @@
 		<title>JavaScript</title>
 		<link rel="stylesheet" href="styles/main.css">
 	</head>
+	
+	<script src="https://code.createjs.com/easeljs-0.8.1.min.js"></script>
+    <script type="text/javascript" src="practice.js"></script>
 
 	<body class="javascript">
 
 		<nav id="nav02"></nav>
 		
 		<div id="side-nav">
-            <ul>                 
+            <ul>               
                 <li><a href="index.html" class="index">Home</a></li>
                 <li><a href="sql.html" class="sql">SQL</a></li>
                 <li><a href="javascript.html" class="javascript">JavaScript</a></li>
@@ -34,10 +37,17 @@
 				<li><button onClick="changeBackground('blue')">Blue</button></li>
 				<li><button onClick="changeBackground('#252526')">Reset</button></li>
 			</ul>
-
+           
+            <div id="game" onload="init();">
+                <canvas id="demoCanvas" width="500" height="300"></canvas>
+            </div>
+            
 			<footer id="foot01"></footer>
 		</div>
+        
+        
 
+        
 		<script type="text/javascript" src="script.js"></script>
 
 	</body>

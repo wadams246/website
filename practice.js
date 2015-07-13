@@ -1,23 +1,12 @@
-var arr1 = ["1", "2", "3", "4", "5"];
+function init() {
+    var stage = new createjs.State(id("demoCanvas"));
+    var circle = new createjs.Shape();
 
-function mapForEach(arr1, fn) {
+    circle.graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 50);
+    circle.x = 100;
+    circle.y = 100;
     
-    var total = 0;
-    for (var i = 0; i < arr1.length; i++) {
-        total += (
-            fn(arr1[i])
-        )
-    };
-    
-    return total;k
+    stage.addChile(circle);
+    stage.update();
 }
 
-
-console.log(arr1);
-
-var arr2 = mapForEach(arr1, function(item) {
-    console.log(item);
-    return parseInt(item);
-});
-
-console.log(arr2);
