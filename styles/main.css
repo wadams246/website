@@ -51,6 +51,43 @@ table tr:nth-child(even) {
 	background-color: #ffffff;
 }
 
+/* sidebar css */
+#side-nav {
+    background: #2D2D30;
+    border-right: 1px solid black;
+    display: block;
+    float: left;
+    height: 100%;
+    margin-left: -249px;
+    position: fixed;
+    text-align: left;
+    top: 0;
+    width: 245px;
+}
+
+    #side-nav ul {
+        display: block;
+        margin-top: 59px;
+        padding-left: 0
+    }
+
+        #side-nav ul li a { 
+            background: #2D2D30;
+            color: grey;
+            display: block;
+            font-family: "Arial", sans-serif;
+            padding: 20px 10px;
+            text-decoration: none;
+            transition: .3s;
+        }
+
+        #side-nav ul li a:hover {
+            background: #424242;
+            color: #D8D8D8;
+            transition: .3s;
+        }
+
+/* top bar css*/
 #navbar {
 	background-color: #2D2D30;
 	border: 1px solid black;
@@ -60,44 +97,44 @@ table tr:nth-child(even) {
 	text-align: center;
 }
 
-#navbar ul {
-	display: inline-block;
-	max-height: 40px;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-}
+    #navbar ul {
+        display: inline-block;
+        max-height: 40px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
 
-#navbar li {
-	display: inline-block;
-	float: left;
-	text-align: center;
-}
+        #navbar li {
+            display: inline-block;
+            float: left;
+            text-align: center;
+        }
 
-#navbar li a {
-	background: #2D2D30;
-	border-bottom: 0;	
-	display: inline-block;
-	color: #C7C7C8;
-	float: left;
-	outline: 1px solid black;
-	padding: 11px 20px;
-	text-decoration: none;
-}
+        #navbar li a {
+            background: #2D2D30;
+            border-bottom: 0;	
+            display: inline-block;
+            color: #C7C7C8;
+            float: left;
+            outline: 1px solid black;
+            padding: 11px 20px;
+            text-decoration: none;
+        }
 
-#navbar li a:hover {
-	border-bottom: 4px solid #009AFF;
-	padding-bottom: 7px;
-	transition: .2s;
-}
+        #navbar li a:hover {
+            border-bottom: 4px solid #009AFF;
+            padding-bottom: 7px;
+            transition: .2s;
+        }
 
-#navbar li a.current {
-	background: #7FF300;
-	color: black;
-}
+        #navbar li a.current {
+            background: #7FF300;
+            color: black;
+        }
 
 
-/*changes color of active page link*/
+/*changes color of active page link for tob nav bar*/
 body.index #navbar li a.index,
 body.javascript #navbar li a.javascript,
 body.sql #navbar li a.sql,
@@ -105,6 +142,16 @@ body.contact #navbar li a.contact {
 	border-bottom: 4px solid #009AFF;
 	padding-bottom: 7px;
 
+}
+
+/*changes color of active page link for side nav bar*/
+body.index #side-nav li a.index,
+body.javascript #side-nav li a.javascript,
+body.sql #side-nav li a.sql,
+body.contact #side-nav li a.contact {
+	background: #424242;
+    border-left: 4px solid #009AFF;
+    color: #D8D8D8;
 }
 
 /*javascript.html css*/
@@ -119,7 +166,6 @@ body.contact #navbar li a.contact {
 ul.button, ul.button li {
 	display: inline-block;
 	list-style-type: none;
-	margin-top; 5px;
 
 }
 
