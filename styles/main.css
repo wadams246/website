@@ -175,3 +175,9 @@ button {
 	padding: 6px;
 	width: 60px;
 }
+
+canvas {
+    background: #eee;
+    display: block;
+    margin: 0 auto;
+}
