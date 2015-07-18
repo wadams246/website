@@ -67,6 +67,7 @@ function drawBall() {
     ctx.closePath();
 }
 
+/*draw brick function using a 2d array*/
 function drawBricks() {
     for (c = 0; c < brickColumnCount; c++) {
         for (r = 0; r < brickRowCount; r++) {
